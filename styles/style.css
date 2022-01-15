@@ -1,0 +1,261 @@
+
+/*.............
+google font 
+............... */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/*...........
+ navigation 
+ ............ */
+  .navigation{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  ul{
+      display: flex;
+      margin-right: 20px;
+  }
+  li{
+      list-style: none;
+      padding: 5px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      margin-right: 20px;
+  }
+
+.title-inflow{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
+.main-title{
+    font-size: 3em;
+    font-weight: 700;
+}
+.link-button{
+    background-color: salmon;
+    border-radius: 15px;
+    border: 1px solid salmon;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+
+}
+/* ................
+first section css 
+.................... */
+.first-section{
+    display: flex;
+    justify-content: space-between;
+}
+.first-div{
+   
+    margin-left: 50px;
+}
+.second-div{
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    
+    margin-right: 50px;
+    margin-top: 0;
+}
+hr{
+    margin-top: 2em;
+   
+    margin-bottom: 0px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+.logo{
+    width: 100px;
+    padding: 0;
+   
+    margin-left: 60px;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+/*.............
+ main-section
+ .............. */
+
+ h2{
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 700;
+     margin-top: 3em;
+
+ }
+ h3{
+    font-size: 2em;
+    margin: 0;
+ }
+ 
+ .main-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+     padding: 40px;
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+ .first-box{
+     width: 250px;
+     box-shadow: 10px 5px -5px 10px rgb(221, 206, 206);
+     margin-left: 50px;
+     background-color: white;
+     margin-bottom: 20px;
+     margin-top: 30px;
+     box-shadow: 10px 10px 30px gray;
+     padding: 5px;
+     border-radius: 10px;
+     
+ }
+     
+   
+
+ 
+ .star-icon{
+     display: flex;
+     align-items: center;
+     list-style: none;
+     color: gold;
+     margin-top: 0;
+ }
+ .icon-flex{
+     display: flex;
+    
+ }
+ .price{
+     color: black;
+     font-size: 2em;
+   margin: 0;
+   padding-left: 5px;
+     
+   
+ }
+ .first-box>.banner>.photo img{
+     width: 250px;
+     height: 200px;
+    
+   
+ }
+ .arrow{
+     font-weight: 700;
+     color: hotpink;
+     text-align: end;
+     margin-right: 120px;
+     margin-top: 3px;
+ }
+ /* .............
+ last section 
+ ............... */
+ .my-section{
+     display: flex;
+     justify-content: space-around;
+     padding-bottom: 60px;
+     
+
+ }
+ .last-title{
+     width: 400px;
+     margin-right: 80px;
+ }
+ .images{
+     margin-left: 100px;
+    
+ }
+ /*...........
+  footer style 
+  .............*/
+  .footer-style{
+      color: white;
+      text-align: center;
+      background-color: indigo;
+      padding-top: 20px;
+      padding-bottom: 5px;
+  }
+
+
+  /*............
+   media quary 
+   ................ */
+
+   /* mobile devices  */
+   @media  only screen and ( max-width:688px) {
+       .first-section{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           width: 100%;
+       }
+       .second-div img{
+           width: 100%;
+       }
+        .main-container{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+           
+        }
+        .my-section{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            justify-content: center;
+        }
+        .first-box{
+            margin: auto;
+            justify-content: center;
+
+            
+        }
+        .images{
+            margin: 0;
+        }
+        .footer-style{
+            justify-content: center;
+        }
+
+       
+   }
+
+   /* tablet divices  */
+   @media only screen and (min-width: 688px) and (max-width: 992px) {
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .second-div img{
+        width: 100%;
+    }
+    .main-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);}
+
+        .my-section{
+            display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-column-gap: 10px;
+           margin-left: 0;
+            justify-content: space-between;
+        }
+        .images{
+            margin-left: 30px;
+        }
+       
+       
+   }
